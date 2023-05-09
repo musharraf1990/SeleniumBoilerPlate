@@ -8,8 +8,10 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.relative_locator import locate_with
 
-PATH = "C:\\Users\\mufti\\OneDrive\\Documents\\Github\\Selenium\\chromedriver.exe"
-driver = webdriver.Chrome(PATH)
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
+PATH = Service("C:\\Users\\mufti\\OneDrive\\Documents\\Github\\Selenium\\chromedriver.exe")
+driver = webdriver.Chrome(service=PATH, options=chrome_options)
 driver.maximize_window()
 driver.get("EnterWebsiteHere")
 sleep(2)
