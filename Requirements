@@ -1,0 +1,5 @@
+# This file contains the commands required to be pasted in the Terminal to install Packages used in the Selenium Boilerplate Repo.
+
+- python.exe -m pip install --upgrade pip
+- pip install selenium
+- pip install openqa-client
