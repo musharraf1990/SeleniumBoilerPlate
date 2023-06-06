@@ -11,7 +11,7 @@ from selenium.webdriver.chrome.service import Service
 
 chrome_options = webdriver.ChromeOptions()
 chrome_options.add_experimental_option("excludeSwitches", ['enable-automation'])
-PATH = Service("C:\\Users\\mufti\\OneDrive\\Documents\\Github\\Selenium\\chromedriver.exe")
+PATH = Service("D:\\Musharraf\\Selenium Automation\\Care Modules\\chromdriver.exe")
 driver = webdriver.Chrome(service=PATH, options=chrome_options)
 driver.maximize_window()
 
